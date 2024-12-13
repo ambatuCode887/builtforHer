@@ -1,0 +1,166 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background: url('image/wallpaper.jpg') no-repeat center center fixed, linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+    background-size: cover;
+    color: #333;
+}
+
+main {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+p {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 1.2em;
+    color: #444;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #ff6b6b;
+    font-size: 2rem;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.row-reverse {
+    flex-direction: row-reverse;
+}
+
+.text {
+    flex: 1;
+    padding: 20px;
+    font-size: 1.1em;
+    background: #ffe8d6;
+    border-radius: 8px;
+    margin: 0 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 20px;
+}
+
+.image img {
+    max-width: 30%;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.image img:hover {
+    transform: scale(1.05);
+}
+
+button {
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    color: white;
+    background: linear-gradient(120deg, #ff6b6b, #ff4757);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background: linear-gradient(120deg, #ff4757, #ff6b6b);
+    transform: translateY(-2px);
+}
+
+button a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.footer {
+    text-align: center;
+    margin-top: 40px;
+}
+
+video {
+    width: 22%;
+    max-width: 500px;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+section a {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 15px;
+    font-size: 1rem;
+    background: #ff6b6b;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+section {
+    padding-bottom: 70px;
+}
+
+section a:hover {
+    background: #ff4757;
+}
+
+section {
+    text-align: center; 
+    margin: 20px 0; 
+}
+
+section a {
+    display: inline-block; 
+    margin: 10px;
+    padding: 10px 20px; 
+    text-decoration: none; 
+    color: white; 
+    background-color: #ff6f61; 
+    border-radius: 5px; 
+    font-weight: bold; 
+    transition: background-color 0.3s ease; 
+}
+
+section a:hover {
+    background-color: #ff4b3e; 
+}
+
+.image-group {
+    display: flex;
+    gap: 10px; 
+}
+
+.image img {
+    max-width: 50%;
+    height: auto;    
+}

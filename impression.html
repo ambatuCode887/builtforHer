@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="image/icontohma.png" type="image/png">
+    <title>using binocular tengok u</title>
+    <style>
+        .buttons {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        button {
+            padding: 15px 30px;
+            font-size: 16px;
+            margin: 10px;
+            cursor: pointer;
+            transition: transform 0.3s ease-in-out;
+        }
+        .no-button {
+            position: relative;
+        }
+
+        .no-button:hover {
+            transform: translate(100px, -50px);
+        }
+
+    body {
+        font-family: 'Arial', sans-serif;
+        background-color: #fef6e4; 
+        margin: 0;
+        padding: 0;
+        color: #333;
+        text-align: center;
+        line-height: 1.5;
+        
+    }
+
+    main {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+        color: #ff6f61; 
+        margin-bottom: 20px;
+    }
+
+    p {
+        font-size: 1.2rem;
+        margin: 15px auto;
+        max-width: 600px; 
+    }
+
+    
+    .mp3 video {
+        margin: 20px 0;
+        border: 3px solid #ff6f61;
+        border-radius: 10px;
+        max-width: 100%;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+    }
+
+    footer {
+        margin-top: 40px;
+        font-size: 0.9rem;
+        color: #777;
+    }
+    </style>
+</head>
+<body>
+    <main>
+        <section class="mp3">
+            <video controls autoplay>
+                <source src="mp3/No. 1 Party Anthem.mp3" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <p>Number one party anthem is what my first impression when i saw you two years ago.</p>
+        </section>
+
+        <p>Let's be friends, everyone started on lvl 1 but I'm lvl 100 mafia boss HAHHAAHHAHAHAH.</p>
+        <p>I hope you get a slightly laugh from these, as it might lighten ur day from whatever you go through</p>
+
+        <i>so let's know each other more?</i>
+        <div class="buttons">
+            <button id="yesButton">Yes</button>
+            <button id="noButton" class="no-button">No</button>
+        </div>
+    </main>
+
+    <script>
+        const noButton = document.getElementById('noButton');
+        noButton.addEventListener('mouseover', () => {
+            const maxX = window.innerWidth - noButton.offsetWidth;
+            const maxY = window.innerHeight - noButton.offsetHeight;
+            const randomX = Math.floor(Math.random() * (maxX+1));
+            const randomY = Math.floor(Math.random() * (maxY+1));
+            noButton.style.left = `${randomX}px`;
+            noButton.style.top = `${randomY}px`;
+        });
+
+        yesButton.addEventListener('click', () => {
+        window.location.href = 'gifYippe.html';
+    });
+    </script>
+</body>
+</html>
